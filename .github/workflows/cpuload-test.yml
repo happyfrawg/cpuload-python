@@ -28,7 +28,7 @@ jobs:
         # Adjust this to match your actual script name and arguments
         run: |
           echo "Starting CPU & memory load test"
-          python cpuload-python.py --duration 60 --load 0.8
+          python cpuload-python.py --gb 2 --seconds 60 --cpu 75 --cpu_duration 60
 
       - name: Confirm test completion
         run: |
